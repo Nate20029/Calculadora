@@ -45,23 +45,27 @@ class MainActivity : AppCompatActivity() {
             }
 
             resultadotextView.text = resultado.toString()
+
         }
     }
 
     private fun numeroPresionado( digito: String){
+        resultadotextView.text = "${resultadotextView.text}$digito"
         if (operacion == NO_OPERACION){
 
             num1 = resultadotextView.text.toString().toDouble()
         }else {
             num2 = resultadotextView.text.toString().toDouble()
         }
-        resultadotextView.text = "${resultadotextView.text}$digito"
+
+
     }
 
     private fun operacionPresionada(operacion: Int){
         this.operacion = operacion
 
         resultadotextView.text = "0"
+
     }
 
     companion object {
