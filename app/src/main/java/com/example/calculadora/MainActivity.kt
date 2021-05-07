@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+
         Uno.setOnClickListener { numeroPresionado("1")}
         Dos.setOnClickListener { numeroPresionado("2")}
         Tres.setOnClickListener { numeroPresionado("3")}
